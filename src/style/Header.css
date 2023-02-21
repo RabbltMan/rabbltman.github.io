@@ -34,15 +34,88 @@
     display: grid;
     grid: auto/repeat(4, 1fr);
     width: 45vw;
-    float: right;
-    margin: auto 5vw;
+    float: left;
+    margin: auto 10vw;
+    align-items: center;
+    justify-items: center;
 }
 
-.headerItem{
+.headerItem {
     color: rgb(255, 255, 255);
     font-family: "Arial";
+    font-size: 2.25vh;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid rgb(0, 17, 17) 3px;
 }
 
 .headerItemContent {
-    line-height: 7.5vh;
+    line-height: 6.8vh;
+    margin: 0 1vw;
+}
+
+.headerItem:hover {
+    animation-name: onHoverEmphasis;
+    animation-direction: alternate;
+    animation-duration: 0.1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes onHoverEmphasis {
+    0% {
+        color: initial;
+    }
+
+    50% {}
+
+    100% {
+        color: rgb(191, 35, 147);
+    }
+}
+
+.Selected {
+    color: rgb(191, 9, 191);
+    font-weight: bolder;
+    border-bottom: solid rgb(191, 9, 191) 3px;
+}
+
+.MobileMenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.MobileMenuContent {
+    display: none;
+    color: white;
+    font-size: 6.5vh;
+    position: relative;
+    float: right;
+    margin: 0;
+    line-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .MobileMenu {
+        display: block;
+    }
+
+    .headerItem {
+        display: none;
+    }
+
+    .headerItemContent {
+        display: none;
+    }
+
+    .headerItemSection {
+        display: none;
+    }
+
+    .MobileMenuContent {
+        display: block;
+    }
 }

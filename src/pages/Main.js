@@ -1,4 +1,5 @@
 import React from "react";
+import Frontpage from "../components/Frontpage";
 import Header from "../components/Header";
 
 class Main extends React.Component {
@@ -6,6 +7,7 @@ class Main extends React.Component {
     return (
       <React.Fragment>
         <Header />
+        <Frontpage />
       </React.Fragment>
     );
   }
