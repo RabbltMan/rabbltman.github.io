@@ -1,3 +1,33 @@
-.siteFront {
-    padding-top: 7.5vh;
+body {
+    background-color: black;
+}
+
+
+.siteFrontBackground {
+    margin: 7.5vh 0 0 0;
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    animation-name: twinkle;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.5, 0.75, 0.86, 0.52);
+    animation-iteration-count: infinite;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: initial;
+        filter: blur(0vw) sepia(0);
+    }
+
+    to {
+        opacity: 0.7;
+        filter: blur(0.5vw) sepia(70%);
+    }
 }
