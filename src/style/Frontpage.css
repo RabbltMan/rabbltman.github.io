@@ -1,19 +1,38 @@
-body {
+.imgBox {
     background-color: black;
+    padding: 0;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 7.5vh;
+    left: 0;
 }
 
-
-.siteFrontBackground {
-    margin: 7.5vh 0 0 0;
+.menuItemSection {
+    display: block;
+    text-align: center;
+    margin: 0;
     padding: 0;
     height: 80vh;
     width: 100vw;
     position: absolute;
-    top: 0;
+    top: 7.5vh;
+    background-color: rgb(170, 64, 64);
     left: 0;
-    opacity: 0.3;
+}
+
+.siteFrontBackground {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    background-color: black;
+    left: 0;
     animation-name: twinkle;
-    animation-duration: 6s;
+    animation-duration: 15s;
     animation-fill-mode: both;
     animation-direction: alternate-reverse;
     animation-timing-function: cubic-bezier(0.5, 0.75, 0.86, 0.52);
@@ -22,12 +41,10 @@ body {
 
 @keyframes twinkle {
     from {
-        opacity: initial;
-        filter: blur(0vw) sepia(0);
+        filter: blur(0) sepia(0) brightness(1);
     }
 
     to {
-        opacity: 0.7;
-        filter: blur(0.5vw) sepia(70%);
+        filter: blur(0.5vw) sepia(70%) brightness(0.4);
     }
 }

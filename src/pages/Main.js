@@ -1,16 +1,16 @@
 import React from "react";
-import Frontpage from "../components/Frontpage";
 import Header from "../components/Header";
+import FrontpageRedirector from '../components/FrontpageRedirector'
+import { useLocation } from "react-router-dom";
 
-class Main extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Header />
-        <Frontpage />
-      </React.Fragment>
-    );
-  }
+function Main() {
+  const routerPath = useLocation()["pathname"];
+  return (
+    <React.Fragment>
+      <Header />
+      <FrontpageRedirector path={routerPath}/>
+    </React.Fragment>
+  );
 }
 
 export default Main;

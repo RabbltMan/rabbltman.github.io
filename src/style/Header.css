@@ -10,6 +10,10 @@
     position: fixed;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     padding: 0.5vh 3vw;
     width: 6.5vh;
