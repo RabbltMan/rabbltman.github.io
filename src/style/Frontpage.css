@@ -8,19 +8,6 @@
     left: 0;
 }
 
-.menuItemSection {
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 80vh;
-    width: 100vw;
-    position: absolute;
-    top: 7.5vh;
-    background-color: rgb(170, 64, 64);
-    left: 0;
-}
-
 .siteFrontBackground {
     display: block;
     margin: 0;
