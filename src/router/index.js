@@ -1,6 +1,8 @@
 import {createBrowserRouter} from 'react-router-dom';
 import Main from '../pages/Main';
 import Archive from '../pages/Archive';
+import Events from '../pages/Events';
+import Misc from '../pages/Misc';
 
 const router = createBrowserRouter([
     {
@@ -10,7 +12,15 @@ const router = createBrowserRouter([
     {
         path: "/Archive",
         element: <Archive />,
-    }
+    },
+    {
+        path: "/Events",
+        element: <Events />,
+    },
+    {
+        path: "/Misc",
+        element: <Misc />,
+    },
 
 ]);
 

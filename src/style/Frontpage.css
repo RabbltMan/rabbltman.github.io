@@ -1,24 +1,17 @@
 .contentBox {
     background-color: black;
     padding: 0;
-    height: 80vh;
     width: 100%;
     position: absolute;
     top: 7.5vh;
     left: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .contentBox {
-        top: 15vh;
-    }
-}
-
 .siteFrontBackground {
     display: block;
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 92.5vh;
     width: 100vw;
     position: relative;
     top: 0;
@@ -31,6 +24,16 @@
     animation-timing-function: cubic-bezier(0.5, 0.75, 0.86, 0.52);
     animation-iteration-count: infinite;
 }
+
+@media screen and (max-width: 768px) {
+    .contentBox {
+        top: 15vh;
+    }
+    .siteFrontBackground {
+        height: 85vh;
+    }
+}
+
 
 @keyframes twinkle {
     from {

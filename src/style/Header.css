@@ -45,6 +45,7 @@ a {
     grid: auto/repeat(4, 1fr);
     width: 45vw;
     float: left;
+    height: 7.5vh;
     margin: auto 10vw;
     align-items: center;
     justify-items: center;
