@@ -4,6 +4,8 @@ import Alert from "react-bootstrap/Alert";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/Archive.css";
 import { BsArrowDownRightCircle } from "react-icons/bs";
+import Table from "react-bootstrap/Table";
+import ArchiveTable from "../components/Table";
 
 function Archive() {
   const [show, setShow] = useState(true);
@@ -38,6 +40,7 @@ function Archive() {
                   <BsArrowDownRightCircle /> 档案列表
                   <span class="smallerTitle"> ARCHIVE LIST</span>
                 </h4>
+                <ArchiveTable />
               </div>
               <div class="col sideBar"></div>
             </div>
@@ -56,6 +59,7 @@ function Archive() {
                 <BsArrowDownRightCircle /> 档案列表
                 <span class="smallerTitle"> ARCHIVE LIST</span>
               </h4>
+              <ArchiveTable />
             </div>
             <div class="col sideBar"></div>
           </div>
