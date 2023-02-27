@@ -6,7 +6,7 @@ class Frontpage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="imgBox">
+        <div className="contentBox">
           <img className="siteFrontBackground" src={BackgroundPic} alt=""></img>
         </div>
       </React.Fragment>

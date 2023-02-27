@@ -32,43 +32,42 @@ function Header() {
         {/* 1000px width */}
         <div className="headerItemSection">
           <Link to={`/`}>
-            <div className={HeaderItem[0]}>
-              <p className={HeaderItemContent[0]}>HOME</p>
+            <div className={HeaderItem[0]} id="mainHeader">
+              <p className={HeaderItemContent[0]} id="mainHeader">HOME</p>
             </div>
           </Link>
-          <div className={HeaderItem[1]}>
-            <p className={HeaderItemContent[1]}>EVENTS</p>
+          <div className={HeaderItem[1]} id="mainHeader">
+            <p className={HeaderItemContent[1]} id="mainHeader">EVENTS</p>
           </div>
           <Link to={`/Archive`}>
-            <div className={HeaderItem[2]}>
-              <p className={HeaderItemContent[2]}>ARCHIVE</p>
+            <div className={HeaderItem[2]} id="mainHeader">
+              <p className={HeaderItemContent[2]} id="mainHeader">ARCHIVE</p>
             </div>
           </Link>
-          <div className={HeaderItem[3]}>
-            <p className={HeaderItemContent[3]}>MISC</p>
+          <div className={HeaderItem[3]} id="mainHeader">
+            <p className={HeaderItemContent[3]} id="mainHeader">MISC</p>
           </div>
         </div>
         <div className="MobileMenuContent">
-          <BiMenu id="ToggleMenu" />
           <p className="menuItemSection">
-            <Link to={`/`} className="LineLink">
-              <div className="MenuItem">
-                <p className="MenuItemContent">HOME</p>
+            <Link to={`/`}>
+              <div className={HeaderItem[0]} id="mobileHeader">
+                <p className={HeaderItemContent[0]} id="mobileHeader">HOME</p>
               </div>
             </Link>
-            <Link className="LineLink">
-              <div className="MenuItem">
-                <p className="MenuItemContent">EVENTS</p>
+            <Link>
+              <div className={HeaderItem[1]} id="mobileHeader">
+                <p className={HeaderItemContent[1]} id="mobileHeader">EVENTS</p>
               </div>
             </Link>
-            <Link to={`/Archive`} className="LineLink">
-              <div className="MenuItem">
-                <p className="MenuItemContent">ARCHIVE</p>
+            <Link to={`/Archive`}>
+              <div className={HeaderItem[2]} id="mobileHeader">
+                <p className={HeaderItemContent[2]} id="mobileHeader">ARCHIVE</p>
               </div>
             </Link>
-            <Link className="LineLink">
-              <div className="MenuItem">
-                <p className="MenuItemContent">MISC</p>
+            <Link>
+              <div className={HeaderItem[3]} id="mobileHeader">
+                <p className={HeaderItemContent[3]} id="mobileHeader">MISC</p>
               </div>
             </Link>
           </p>

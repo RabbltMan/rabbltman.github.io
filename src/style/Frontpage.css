@@ -1,4 +1,4 @@
-.imgBox {
+.contentBox {
     background-color: black;
     padding: 0;
     height: 80vh;
@@ -6,6 +6,12 @@
     position: absolute;
     top: 7.5vh;
     left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .contentBox {
+        top: 15vh;
+    }
 }
 
 .siteFrontBackground {
