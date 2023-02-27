@@ -10,7 +10,7 @@
     position: fixed;
 }
 
-a {
+a.NoDecoration {
     text-decoration: none;
 }
 
@@ -21,9 +21,8 @@ a {
 }
 
 .logo {
-    padding: 0.5vh 3vw;
-    width: 6.5vh;
-    height: 6.5vh;
+    width: 7.5vh;
+    height: 7.5vh;
     position: relative;
     float: left;
 }
