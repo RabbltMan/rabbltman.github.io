@@ -4,8 +4,8 @@ import Alert from "react-bootstrap/Alert";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/Archive.css";
 import { BsArrowDownRightCircle } from "react-icons/bs";
-import Table from "react-bootstrap/Table";
-import ArchiveTable from "../components/Table";
+import { Table } from "react-bootstrap";
+import TableContents from "../components/TableContents";
 
 function Archive() {
   const [show, setShow] = useState(true);
@@ -35,12 +35,30 @@ function Archive() {
           </div>
           <div className="Main">
             <div class="row align-items-start">
-              <div class="col-8 mainGridContainer">
+              <div class="col-8 mainGridContainer animationPop">
                 <h4>
                   <BsArrowDownRightCircle /> 档案列表
                   <span class="smallerTitle"> ARCHIVE LIST</span>
                 </h4>
-                <ArchiveTable />
+                <Table hover>
+                  <thead>
+                    <tr>
+                      <th className="columnName">
+                        名称
+                        <br />
+                        Archive Name
+                      </th>
+                      <th className="columnUpdate">
+                        上次更新
+                        <br />
+                        Latest Update
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <TableContents />
+                  </tbody>
+                </Table>
               </div>
               <div class="col sideBar"></div>
             </div>
@@ -59,7 +77,25 @@ function Archive() {
                 <BsArrowDownRightCircle /> 档案列表
                 <span class="smallerTitle"> ARCHIVE LIST</span>
               </h4>
-              <ArchiveTable />
+              <Table hover>
+                <thead>
+                  <tr>
+                    <th className="columnName">
+                      名称
+                      <br />
+                      Archive Name
+                    </th>
+                    <th className="columnUpdate">
+                      上次更新
+                      <br />
+                      Latest Update
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <TableContents />
+                </tbody>
+              </Table>
             </div>
             <div class="col sideBar"></div>
           </div>

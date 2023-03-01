@@ -41,6 +41,13 @@
     margin: 1vw;
 }
 
+.animationPop {
+    animation-name: alertPopout;
+    animation-duration: 0.15s;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+}
+
 .smallerTitle {
     font-size: 2.5vh;
 }
