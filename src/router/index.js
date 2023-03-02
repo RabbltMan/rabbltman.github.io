@@ -6,7 +6,7 @@ import Misc from '../pages/Misc';
 
 const router = createBrowserRouter([
     {
-        path: '/*',
+        path: '/',
         element: <Main />,
     },
     {
