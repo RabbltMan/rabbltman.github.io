@@ -1,4 +1,4 @@
-import {createBrowserRouter} from 'react-router-dom';
+import {createBrowserRouter, redirect} from 'react-router-dom';
 import Main from '../pages/Main';
 import Archive from '../pages/Archive';
 import Events from '../pages/Events';
